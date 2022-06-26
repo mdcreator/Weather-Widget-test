@@ -11,7 +11,7 @@
 
 # Responsive & User-friendly interface
 
-Живая страница приложения:
+## Живая страница приложения: https://mdcreator.github.io/Weather-Widget-test/
 
 Tech stack
 
