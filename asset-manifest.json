@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Weather-Widget-test/static/css/main.848984d7.css",
+    "main.js": "/Weather-Widget-test/static/js/main.54fc3e28.js",
+    "static/media/cover.jpg": "/Weather-Widget-test/static/media/cover.7e95ae7f1a04808effc7.jpg",
+    "index.html": "/Weather-Widget-test/index.html",
+    "main.848984d7.css.map": "/Weather-Widget-test/static/css/main.848984d7.css.map",
+    "main.54fc3e28.js.map": "/Weather-Widget-test/static/js/main.54fc3e28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.848984d7.css",
+    "static/js/main.54fc3e28.js"
+  ]
+}
