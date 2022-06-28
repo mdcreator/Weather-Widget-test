@@ -7,7 +7,7 @@ import Geoposition from '../Geoposition';
 export default function SearchForm() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
-  const [showForm, setShowForm] = useState(false);
+  // const [showForm, setShowForm] = useState(false);
   const [error, setError] = useState(null);
 
   const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
@@ -15,7 +15,6 @@ export default function SearchForm() {
   const url = `${BASE_URL}?q=${location}&lang=en&units=metric&appid=${API_KEY}`;
 
   const searchLocation = () => {
-    // if (event.key === 'Enter');
     axios
       .get(url)
       .then(response => {
@@ -28,14 +27,13 @@ export default function SearchForm() {
       });
   };
 
-  const toggleForm = () => setShowForm(prevValue => !prevValue);
   const handleOnSubmit = e => {
     e.preventDefault();
     if (!location || location === '') {
       return;
     }
+
     setLocation('');
-    setShowForm(false);
   };
 
   const handleInputChange = event => {
@@ -46,27 +44,32 @@ export default function SearchForm() {
     <div>
       <div className={s.wrapper}>
         {/* <div className={s.title}>{data.name}</div> */}
-        {showForm ? (
-          <form className={s.form} onSubmit={handleOnSubmit}>
-            <input
-              className={s.input}
-              type="text"
-              value={location}
-              //   autoComplete="off"
-              autoFocus
-              placeholder="Enter Location"
-              onChange={handleInputChange}
-              onKeyPress={searchLocation}
-            />
-            <button type="submit" className={s.searchBtn}>
-              <span className={s.label}>Search</span>
-            </button>
-          </form>
-        ) : (
-          <button className={s.openFormBtn} onClick={toggleForm}>
+        {/* {showForm ? ( */}
+        <form className={s.form} onSubmit={handleOnSubmit}>
+          <input
+            className={s.input}
+            type="text"
+            value={location}
+            autoFocus
+            placeholder="Enter Location"
+            onChange={handleInputChange}
+            onKeyPress={searchLocation}
+            required
+          />
+
+          {/* <button
+            type="submit"
+            className={s.openFormBtn}
+            // onClick={toggleForm}
+          >
             Choose your country
-          </button>
-        )}
+          </button> */}
+        </form>
+        {/* ) : ( */}
+        {/* <button className={s.openFormBtn} onClick={toggleForm}>
+          Choose your country
+        </button> */}
+        {/* )} */}
       </div>
 
       <div className={s.container}>
@@ -74,6 +77,7 @@ export default function SearchForm() {
 
         <div className={s.card}>
           {/* <div className={s.top}> */}
+
           <h1 className={s.location}>{data.name}</h1>
           <div>
             {data.main ? (

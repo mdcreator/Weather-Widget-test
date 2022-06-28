@@ -21,7 +21,7 @@ export default function Geoposition() {
         savePositionToState,
       );
       const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=c9bc59716722f77db4317428d0a799df&units=metric`,
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=da06cf8106afb34ae1142a4beb9ed1aa&units=metric`,
       );
       setTemperature(res.data.main.temp);
       setCityName(res.data.name);

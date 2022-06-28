@@ -1,5 +1,6 @@
 import Container from './components/Container';
-import React from 'react';
+// import Widget from './components/Widget/Widget';
+// import Geoposition from './components/Geoposition';
 import SearchForm from './components/SearchForm';
 
 export default function App() {

@@ -11,13 +11,14 @@
   font-family: inherit;
   font-weight: 100;
   font-size: 15px;
-  width: 195px;
+  width: 100%;
   color: whitesmoke;
   border-radius: 12px;
   border: 1px solid whitesmoke;
   background: none;
   padding: 15px 30px;
   transition: 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .openFormBtn:hover {
@@ -25,25 +26,18 @@
   color: #7cb9e8;
 }
 
-.form {
+/* .form {
   display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 500px;
-  margin: 10px 0 0 0;
-  background-color: #fff;
-  border-radius: 3px;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
+  flex-direction: column;
+} */
 
-.searchBtn {
+/* .searchBtn {
   display: inline-block;
   width: 48px;
   height: 48px;
   border: 0;
   cursor: pointer;
-}
+} */
 
 .searchBtn:hover {
   opacity: 1;
@@ -58,10 +52,15 @@
   width: 100%;
   font: inherit;
   font-size: 20px;
+  color: whitesmoke;
   border: none;
+  border-bottom: 1px solid whitesmoke;
   outline: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px;
+  background: none;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  /* overflow: hidden; */
 }
 
 .input::placeholder {
@@ -90,7 +89,7 @@
 }
 
 .temp {
-  font-size: 96px;
+  font-size: 86px;
   color: #f1c232;
 }
 
