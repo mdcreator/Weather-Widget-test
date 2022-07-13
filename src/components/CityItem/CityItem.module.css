@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px 40px;
+  color: whitesmoke;
+  margin: 10px;
+}
+
+.location {
+  color: whitesmoke;
+}
+
+.temp {
+  font-size: 86px;
+  color: #f1c232;
+}
+
+.description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+  margin: 30px 15px 15px 15px;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.data {
+  padding: 20px;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
